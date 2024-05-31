@@ -28,7 +28,9 @@ const stockSymbolFromURLPath = computed((): string => {
   return route.path.split('/')[2].toUpperCase() as string
 })
 onMounted(async () => {
-  stockSymbol.value = stockSymbolFromURLPath.value
+  if (stockSymbolFromURLPath.value.length > 0) {
+    stockSymbol.value = stockSymbolFromURLPath.value
+  }
   try {
     const response = await axios.get(stocksApiUrl)
     // const response = await axios.get(dummyApiForMSFT)

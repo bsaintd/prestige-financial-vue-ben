@@ -56,13 +56,15 @@ defineProps<{
   }
 }
 .time-series-table {
-    th, td {
-        padding: 2px 40px 2px 0;
-    }
+  margin: 0 auto;
 
-    td {
-      padding-top:2px;
-      padding-bottom:2px;
-    }
+  th, td {
+    padding: 2px 40px 2px 0;
+  }
+
+  td {
+    padding-top:2px;
+    padding-bottom:2px;
+  }
 }
 </style>

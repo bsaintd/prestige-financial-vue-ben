@@ -42,7 +42,6 @@ onMounted(async () => {
 
 <style type="scss" scoped>
 .home-container {
-  margin: 0 auto;
   background-color: white;
   width: 75%;
 }

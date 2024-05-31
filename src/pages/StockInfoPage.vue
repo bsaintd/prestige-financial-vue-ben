@@ -33,7 +33,6 @@ onMounted(async () => {
   try {
     const response = await axios.get(stocksApiUrl)
     // const response = await axios.get(dummyApiForMSFT)
-    console.log(response)
     if (response.status !== 200) {
       stockDataError.value = true
       stockDataErrorMsg.value = 'Error fetching data'

@@ -18,8 +18,7 @@ const stockData = ref<stockDataType[]>([])
 const stockDataError = ref<boolean>(false)
 const stockDataErrorMsg = ref<string>('')
 const stockSymbol = ref<string>('MSFT')
-const stockApiBenKey = 'ZDZYELWESJRIJB36'
-// const stockApiBenKey = '8FNMJ3IYLR7WXQOS'
+const stockApiBenKey = 'INSERT APLHA VANTAGE API KEY HERE'
 const stockQuery = 'TIME_SERIES_MONTHLY'
 const stocksApiUrl = `https://www.alphavantage.co/query?function=${stockQuery}&symbol=${stockSymbol}&apikey=${stockApiBenKey}`
 // const dummyApiForMSFT = 'http://jon.allocate.build/msft.json'
